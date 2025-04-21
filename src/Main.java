@@ -28,6 +28,18 @@ public class Main {
         System.out.println("Area= "+c1.lidArea());
         System.out.println("Volume= "+c1.volume());
         System.out.println("Surface= "+c1.totalSurfaceArea());
+        Student a1 = new Student();
+        a1.name = "Ali";
+        a1.rollnum = 1110;
+        a1.course = "Math";
+        a1.m1 = 45.5;
+        a1.m2 = 63.7;
+        a1.m3 = 87.2;
+        System.out.println(a1.details());
+        System.out.println("Average="+a1.average());
+        System.out.println("Grade: "+a1.grade());
+
+
 
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
