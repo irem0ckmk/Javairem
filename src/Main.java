@@ -15,7 +15,7 @@ public class Main {
         System.out.println(e3);// ➝ Intern Mehmet earns 3000, studies at Boğaziçi
         System.out.println(i);
 
- */
+
 
         Rectangle s1 = new Rectangle();
         s1.length = 4;
@@ -38,6 +38,46 @@ public class Main {
         System.out.println(a1.details());
         System.out.println("Average="+a1.average());
         System.out.println("Grade: "+a1.grade());
+
+
+        Karakter h1= new Savasci("Kılıç","Ork");
+
+        Karakter h2 = new Buyucu("Asa","Kutup Dehşeti");
+
+        Karakter h3 = new Okcu("Demir Ok","Goblin");
+        Karakter[] takim = { h1, h2, h3 };
+
+        for (Karakter k : takim) {
+            k.saldir(); // Polymorphism çalışıyor
+        }
+
+        // Overload testleri (type casting ile)
+        ((Savasci)h1).saldir(h1.getDusman());
+        ((Buyucu)h2).saldir(h2.getDusman());
+        ((Okcu)h3).saldir(h3.getDusman());
+
+
+ */
+        Shape c1 = new Circle();
+        Shape c2 = new Rectangle();
+        ((Circle) c1).setRaius(5);
+        ((Rectangle) c2).setBreadth(6);
+        ((Rectangle) c2).setLength(3);
+        Shape[] sekiller = { c1, c2 };
+
+        for (Shape s : sekiller) {
+            s.ciz();
+            System.out.println("Alan: " + s.Area());
+            System.out.println("Çevre: " + s.perimeter());
+            System.out.println("-----------");
+        }
+
+
+
+
+
+
+        
 
 
 
