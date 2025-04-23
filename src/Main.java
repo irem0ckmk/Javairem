@@ -57,7 +57,7 @@ public class Main {
         ((Okcu)h3).saldir(h3.getDusman());
 
 
- */
+
         Shape c1 = new Circle();
         Shape c2 = new Rectangle();
         ((Circle) c1).setRaius(5);
@@ -71,6 +71,8 @@ public class Main {
             System.out.println("Çevre: " + s.perimeter());
             System.out.println("-----------");
         }
+
+ */
 
 
 
